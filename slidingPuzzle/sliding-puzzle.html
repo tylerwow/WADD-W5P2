@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--
+        PROBLEMS
+        1. Neither the image tiles or the menu buttons can receive keyboard focus
+        2. Even if the image tiles are made keyboard focusable, they are not selectable
+        3. Once the menu buttons are made focusable, keyboard focus moves from right to left instead of left to right
+        4. Screenreader users would not be able to tell which image is currently selected
+    -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet"/>
+    <title>Amazing Sliding Puzzle Game!</title>
+</head>
+<body>
+    <nav>
+        <div class="menu" id="menu1">
+            <h1 class="title">Amazing Sliding Puzzle Game!</h1>
+            <div class="menu-item" id="shuffle-board">
+                shuffle board
+            </div>
+            <div class="menu-item" id="show-finished">
+                show finished puzzle
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- 
+        THE GAME BOARD 
+        Elements with class "tile" are the interactive pieces
+    -->
+    <main>
+        <div class="board">
+            <div class="tile-container" id="pos0">
+                <div class="tile">
+                    <img id="img0" src="tile-images/0.jpg" />
+                </div>
+            </div>
+            <div class="tile-container" id="pos1">
+                <div class="tile">
+                    <img id="img1" src="tile-images/1.jpg" />
+                </div>
+            </div>
+            <div class="tile-container" id="pos2">
+                <div class="tile">
+                    <img id="img2" src="tile-images/2.jpg" />
+                </div>
+            </div>
+            <div class="tile-container" id="pos3">
+                <div class="tile">
+                    <img id="img3" src="tile-images/3.jpg" />
+                </div>
+            </div>
+            <div class="tile-container" id="pos4">
+                <div class="tile">
+                    <img id="img4" src="tile-images/4.jpg" />
+                </div>
+            </div>
+            <div class="tile-container" id="pos5">
+                <div class="tile">
+                    <img id="img5" src="tile-images/5.jpg" />
+                </div>
+            </div>
+            <div class="tile-container" id="pos6">
+                <div class="tile">
+                    <img id="img6" src="tile-images/6.jpg" />
+                </div>
+            </div>
+            <div class="tile-container" id="pos7">
+                <div class="tile">
+                    <img id="img7" src="tile-images/7.jpg" />
+                </div>
+            </div>
+            <div class="tile-container" id="pos8"></div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

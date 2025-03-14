@@ -1,0 +1,52 @@
+body {
+    font-family:sans-serif;
+    color:#201f1f;
+    font-size: 18px;
+    margin:0;
+    padding:0;
+}
+
+/* Ensure click events only go to the tile, not it's children */
+.tile > * {
+    pointer-events: none;
+}
+
+.menu-item {
+    float:right;
+    margin-top:36px;
+    margin-right:36px;
+}
+
+
+.title {
+    display:inline-block;
+    margin-left:1em;
+}
+
+.board {
+    width:300px;
+    height:300px;
+    margin:auto;
+    background-color:#cccccc;
+    padding:2px;
+} 
+
+.tile-container {
+    width:100px;
+    height:100px;
+    float:left;
+    position: relative;
+}
+
+.tile {
+    width:98px;
+    height:98px;
+    margin:1px;
+    background-color: #f0ffff;
+    position:absolute;
+    padding:0;
+}
+
+.menu-item:hover {
+    color: #ff0000;
+}
