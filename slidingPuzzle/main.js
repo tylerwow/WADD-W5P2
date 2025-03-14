@@ -165,7 +165,7 @@ function reset() {
 
 // Add event listeners to the tiles to move when selected
 for(let i = 0; i < tiles.length; i++) {
-    tiles[i].addEventListener("mouseup", function (e) { 
+    tiles[i].addEventListener("click", function (e) { 
         tileSelected(e)
     });
 }

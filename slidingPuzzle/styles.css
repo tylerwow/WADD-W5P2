@@ -12,9 +12,13 @@ body {
 }
 
 .menu-item {
-    float:right;
+    display: inline-block;
     margin-top:36px;
     margin-right:36px;
+}
+
+#shuffle-board {
+    margin-left: 60%;
 }
 
 
